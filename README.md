@@ -14,9 +14,9 @@ I found two loaders [csv-loader](https://www.npmjs.com/package/csv-loader) and [
 
 No errors are produced, but only the path to the csv file is imported, not the content converted into JSON as expected.
 
-![docs/assets/craco__csv-loader__app.png](docs/assets/craco__csv-loader__app.png "App Output")
+![docs/assets/craco__csv-loader__app.png](./docs/assets/craco__csv-loader__app.png "App Output")
 
-When webpack is run through craco, the whole webpack config is written to [webpack.config.json](webpack.config.json) and all rules are written to [webpack.rules.csv](webpack.rules.csv) for debugging.
+When webpack is run through craco, the whole webpack config is written to [webpack.config.json](./webpack.config.json) and all rules are written to [webpack.rules.csv](./webpack.rules.csv) for debugging.
 
 ### With Craco
 
