@@ -18,6 +18,8 @@ No errors are produced, but only the path to the csv file is imported, not the c
 
 When webpack is run through craco, the whole webpack config is written to [webpack.config.json](./webpack.config.json) and all rules are written to [webpack.rules.csv](./webpack.rules.csv) for debugging.
 
+The crazy thing, it works from witihin CodeSandbox. I have created a [sandbox](https://codesandbox.io/s/epic-pasteur-3bh1i) as a fork from this [repo](https://github.com/fea-evaluation/csv-import/tree/craco__csv-loader).
+
 ### With Craco
 
 I found one [craco](https://github.com/gsoft-inc/craco) webpack config plugin [craco-csv-loader](https://www.npmjs.com/package/craco-csv-loader).

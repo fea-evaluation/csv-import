@@ -15,7 +15,9 @@
       "start": "craco start",
       "build": "craco build",
       "test": "craco test",
-      "eject": "craco eject"
+      "eject": "craco eject",
+      "preserve": "yarn build",
+      "serve": "npx serve build"
    },
    "eslintConfig": {
       "extends": [

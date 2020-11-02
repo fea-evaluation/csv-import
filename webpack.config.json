@@ -1,19 +1,20 @@
 {
-  "mode": "development",
-  "bail": false,
-  "devtool": "cheap-module-source-map",
+  "mode": "production",
+  "bail": true,
+  "devtool": "source-map",
   "entry": "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/src/index.js",
   "output": {
-    "pathinfo": true,
-    "filename": "static/js/bundle.js",
+    "path": "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/build",
+    "pathinfo": false,
+    "filename": "static/js/[name].[contenthash:8].js",
     "futureEmitAssets": true,
-    "chunkFilename": "static/js/[name].chunk.js",
+    "chunkFilename": "static/js/[name].[contenthash:8].chunk.js",
     "publicPath": "/",
     "jsonpFunction": "webpackJsonpcsv-import",
     "globalObject": "this"
   },
   "optimization": {
-    "minimize": false,
+    "minimize": true,
     "minimizer": [
       {
         "options": {
@@ -177,7 +178,7 @@
                   }
                 ]
               ],
-              "cacheIdentifier": "development:babel-plugin-named-asset-import@0.3.7:babel-preset-react-app@10.0.0:react-dev-utils@11.0.0:react-scripts@4.0.0",
+              "cacheIdentifier": "production:babel-plugin-named-asset-import@0.3.7:babel-preset-react-app@10.0.0:react-dev-utils@11.0.0:react-scripts@4.0.0",
               "plugins": [
                 [
                   "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/babel-plugin-named-asset-import/index.js",
@@ -188,12 +189,11 @@
                       }
                     }
                   }
-                ],
-                "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/react-refresh/babel.js"
+                ]
               ],
               "cacheDirectory": true,
               "cacheCompression": false,
-              "compact": false
+              "compact": true
             }
           },
           {
@@ -214,7 +214,7 @@
               ],
               "cacheDirectory": true,
               "cacheCompression": false,
-              "cacheIdentifier": "development:babel-plugin-named-asset-import@0.3.7:babel-preset-react-app@10.0.0:react-dev-utils@11.0.0:react-scripts@4.0.0",
+              "cacheIdentifier": "production:babel-plugin-named-asset-import@0.3.7:babel-preset-react-app@10.0.0:react-dev-utils@11.0.0:react-scripts@4.0.0",
               "sourceMaps": true,
               "inputSourceMap": true
             }
@@ -223,7 +223,10 @@
             "test": {},
             "exclude": {},
             "use": [
-              "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/style-loader/dist/cjs.js",
+              {
+                "loader": "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/mini-css-extract-plugin/dist/loader.js",
+                "options": {}
+              },
               {
                 "loader": "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/css-loader/dist/cjs.js",
                 "options": {
@@ -244,7 +247,10 @@
           {
             "test": {},
             "use": [
-              "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/style-loader/dist/cjs.js",
+              {
+                "loader": "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/mini-css-extract-plugin/dist/loader.js",
+                "options": {}
+              },
               {
                 "loader": "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/css-loader/dist/cjs.js",
                 "options": {
@@ -266,7 +272,10 @@
             "test": {},
             "exclude": {},
             "use": [
-              "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/style-loader/dist/cjs.js",
+              {
+                "loader": "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/mini-css-extract-plugin/dist/loader.js",
+                "options": {}
+              },
               {
                 "loader": "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/css-loader/dist/cjs.js",
                 "options": {
@@ -300,7 +309,10 @@
           {
             "test": {},
             "use": [
-              "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/style-loader/dist/cjs.js",
+              {
+                "loader": "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/mini-css-extract-plugin/dist/loader.js",
+                "options": {}
+              },
               {
                 "loader": "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/css-loader/dist/cjs.js",
                 "options": {
@@ -362,7 +374,18 @@
         "scriptLoading": "blocking",
         "compile": true,
         "favicon": false,
-        "minify": "auto",
+        "minify": {
+          "removeComments": true,
+          "collapseWhitespace": true,
+          "removeRedundantAttributes": true,
+          "useShortDoctype": true,
+          "removeEmptyAttributes": true,
+          "removeStyleLinkTypeAttributes": true,
+          "keepClosingSlash": true,
+          "minifyJS": true,
+          "minifyCSS": true,
+          "minifyURLs": true
+        },
         "cache": true,
         "showErrors": true,
         "chunks": "all",
@@ -376,8 +399,13 @@
       "version": 4
     },
     {
+      "tests": [
+        {}
+      ]
+    },
+    {
       "replacements": {
-        "NODE_ENV": "development",
+        "NODE_ENV": "production",
         "PUBLIC_URL": "",
         "FAST_REFRESH": true
       }
@@ -388,37 +416,18 @@
     {
       "definitions": {
         "process.env": {
-          "NODE_ENV": "\"development\"",
+          "NODE_ENV": "\"production\"",
           "PUBLIC_URL": "\"\"",
           "FAST_REFRESH": "true"
         }
       }
     },
     {
-      "options": {},
-      "fullBuildTimeout": 200,
-      "requestTimeout": 10000
-    },
-    {
       "options": {
-        "overlay": {
-          "entry": "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/react-dev-utils/webpackHotDevClient.js",
-          "module": "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/react-dev-utils/refreshOverlayInterop.js",
-          "sockIntegration": false
-        },
-        "exclude": {},
-        "include": {}
+        "filename": "static/css/[name].[contenthash:8].css",
+        "ignoreOrder": false,
+        "chunkFilename": "static/css/[name].[contenthash:8].chunk.css"
       }
-    },
-    {
-      "options": {},
-      "logger": {},
-      "pathCache": {},
-      "fsOperations": 0,
-      "primed": false
-    },
-    {
-      "nodeModulesPath": "/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules"
     },
     {
       "opts": {
