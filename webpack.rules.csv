@@ -1,0 +1,12 @@
+index;test;loader
+0;undefined;undefined
+1;/\.avif$/;/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/url-loader/dist/cjs.js
+2;/\.bmp$/,/\.gif$/,/\.jpe?g$/,/\.png$/;/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/url-loader/dist/cjs.js
+3;/\.(js|mjs|jsx|ts|tsx)$/;/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/babel-loader/lib/index.js
+4;/\.(js|mjs)$/;/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/babel-loader/lib/index.js
+5;/\.css$/;undefined
+6;/\.module\.css$/;undefined
+7;/\.(scss|sass)$/;undefined
+8;/\.module\.(scss|sass)$/;undefined
+9;undefined;/home/tobias/workspace/fea17e86/fea-evaluation/csv-import/node_modules/file-loader/dist/cjs.js
+10;/\.csv$/;csv-loader
