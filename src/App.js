@@ -1,3 +1,5 @@
+import React from "react";
+
 import sample from "./sample.csv";
 
 console.log(sample);
